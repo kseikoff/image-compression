@@ -3,7 +3,7 @@ import numpy as np
 import os
 import glob
 
-img_extensions = ('png', 'jpg', 'jpeg')
+img_extensions = ('png', 'jpg', 'jpeg', 'webp', 'bmp')
 
 def get_image_paths(folder_path: str):
     full_path = os.path.join(os.getcwd(), folder_path)
