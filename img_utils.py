@@ -29,7 +29,4 @@ def compress_grayscale_img(img:Image, compr_perc:int):
     dim_S = S.shape[0]
     compr_val = dim_S - int(dim_S * (compr_perc / 100))
 
-    if (dim_S < compr_val or compr_val <= 0):
-        return U * S * V
-
     return Image.fromarray(np.matrix(U[:, :compr_val]) * np.diag(S[:compr_val]) * np.matrix(V[:compr_val, :]))

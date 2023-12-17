@@ -18,7 +18,7 @@ def ask_img_compression_percentage():
     compr_perc = 0
     while not (0 < compr_perc < 100):
         try:
-            compr_perc = float(input("Enter compression percentage (1..99%): "))
+            compr_perc = float(input("Enter compression percentage (0..100)%: "))
         except ValueError:
             pass
     
